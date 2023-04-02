@@ -27,8 +27,9 @@ class _landingScreenState extends State<landingScreen> {
 
               const Center(
                 child: Text(
-                  'I am a',
+                  "I'm a",
                       style: TextStyle(
+                      fontStyle: FontStyle.italic,
                       fontSize: 28.0,
                       fontWeight: FontWeight.bold,
                   ),
