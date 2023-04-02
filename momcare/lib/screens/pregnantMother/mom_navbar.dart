@@ -33,30 +33,30 @@ class _NavBarState extends State<NavBar> {
           customDivider(),
           CustomListTileButton(
             onTap: (){},
-            title: 'Profile',
+            title: 'Calender',
           ),customDivider(),
           CustomListTileButton(
             onTap: (){},
-            title: 'Profile',
+            title: 'appoinment History',
           ),
           customDivider(),
           CustomListTileButton(
             onTap: (){},
-            title: 'Profile',
+            title: 'Emergency Call',
           ),
           customDivider(),
           CustomListTileButton(
             onTap: (){},
-            title: 'Profile',
+            title: 'Notification',
           ),
           customDivider(),
           CustomListTileButton(
             onTap: (){},
-            title: 'Profile',
+            title: 'Terms & Condition',
           ),customDivider(),
           CustomListTileButton(
             onTap: (){},
-            title: 'Profile',
+            title: 'Conatct Us',
           ),
           customDivider(),
           CustomListTileButton(
@@ -75,7 +75,7 @@ class _NavBarState extends State<NavBar> {
     return const Padding(
       padding:  EdgeInsets.symmetric(horizontal: 50),
       child: Divider(
-        color: kButtonColor,
+        color: kDarkcolor,
         thickness: 3,
       ),
     );

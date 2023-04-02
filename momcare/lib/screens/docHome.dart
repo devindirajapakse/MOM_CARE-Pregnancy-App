@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:momcare/screens/pregnantMother/mom_navbar.dart';
+import 'package:momcare/screens/navbar.dart';
 
-class MomHome extends StatefulWidget {
-  const MomHome({super.key});
+class DocHome extends StatefulWidget {
+  const DocHome({super.key});
 
   @override
-  State<MomHome> createState() => _MomHomeState();
+  State<DocHome> createState() => _DocHomeState();
 }
 
-class _MomHomeState extends State<MomHome> {
+class _DocHomeState extends State<DocHome> {
   @override
   Widget build(BuildContext context) {
     final currentWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      drawer: const NavBar(),
+      drawer: const MainNaveBar(),
       appBar: AppBar(
         backgroundColor: Color(0xffDECBEC),
         toolbarHeight: 60,
@@ -28,9 +28,5 @@ class _MomHomeState extends State<MomHome> {
       ),
       
     );
-           
-            
-
-          
   }
 }
