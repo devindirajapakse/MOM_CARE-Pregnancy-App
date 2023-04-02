@@ -13,17 +13,21 @@ class _landingScreenState extends State<landingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: Container(
         color: Color(0xffDECBEC),
+        
         child: Center(
           child: Column(
             children: [
+              SizedBox(height: 100,),
               Container(
                 child: Image(
                   image: AssetImage ("images/logo.png"),
                   height: 230,
                   ),
               ),
+              
 
               const Center(
                 child: Text(
@@ -36,7 +40,7 @@ class _landingScreenState extends State<landingScreen> {
                 ),
               ),
 
-              const SizedBox(height: 160.0),
+              const SizedBox(height: 70.0),
                           Center(
                             child: SizedBox(
                               width: 200,
