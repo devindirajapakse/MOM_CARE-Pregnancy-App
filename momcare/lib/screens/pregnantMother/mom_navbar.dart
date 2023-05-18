@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:momcare/colors.dart';
+import 'package:momcare/screens/pregnantMother/mom_AppointHistory1.dart';
+import 'package:momcare/screens/pregnantMother/mom_Calender.dart';
+import 'package:momcare/screens/pregnantMother/mom_ContactUs.dart';
+import 'package:momcare/screens/pregnantMother/mom_Emergency.dart';
+import 'package:momcare/screens/pregnantMother/mom_Notification.dart';
+import 'package:momcare/screens/pregnantMother/mom_Profile.dart';
+import 'package:momcare/screens/pregnantMother/mom_Signup.dart';
+import 'package:momcare/screens/signInScreen.dart';
+
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
@@ -27,40 +36,32 @@ class _NavBarState extends State<NavBar> {
           
           customDivider(),
           CustomListTileButton(
-            onTap: (){},
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>momProfile()));},
             title: 'Profile',
           ),
           customDivider(),
           CustomListTileButton(
-            onTap: (){},
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>momCalender()));},
             title: 'Calender',
           ),customDivider(),
           CustomListTileButton(
-            onTap: (){},
-            title: 'appoinment History',
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>mom_appointHistory1()));},
+            title: 'Appoinment History',
           ),
           customDivider(),
           CustomListTileButton(
-            onTap: (){},
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>momEmergency()));},
             title: 'Emergency Call',
           ),
           customDivider(),
           CustomListTileButton(
-            onTap: (){},
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>momNotification()));},
             title: 'Notification',
           ),
           customDivider(),
+          
           CustomListTileButton(
-            onTap: (){},
-            title: 'Terms & Condition',
-          ),customDivider(),
-          CustomListTileButton(
-            onTap: (){},
-            title: 'Conatct Us',
-          ),
-          customDivider(),
-          CustomListTileButton(
-            onTap: (){},
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>SignInScreen()));},
             title: 'Logout',
           ),
           customDivider(),

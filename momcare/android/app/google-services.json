@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "456550180864",
+    "project_id": "momcare-app",
+    "storage_bucket": "momcare-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456550180864:android:fb4d1ea1a562d68f49d0e5",
+        "android_client_info": {
+          "package_name": "com.example.momcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456550180864-gjrjjpp01b181389nasjvtj43q24j7lj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.momcare",
+            "certificate_hash": "d8e1efc48e04f901b5a2d951b37e1f93e85641cc"
+          }
+        },
+        {
+          "client_id": "456550180864-2fk2s9f6ga362lif30363raik9eqpo9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC05mOBIE5Bq9kEf6ZK_BmQPld_o_ZxynY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456550180864-2fk2s9f6ga362lif30363raik9eqpo9f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "456550180864-mjte5eah873ioa5m1qiiah0pgiaslon3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.momcare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
