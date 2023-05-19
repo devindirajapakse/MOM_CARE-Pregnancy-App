@@ -71,13 +71,7 @@ class _SignUpFormState extends State<SignUpForm> {
           const SizedBox(
             height: 16.0,
           ),
-          // TextField(
-          //   controller: confirmpass,
-          //   decoration: const InputDecoration(hintText: 'Confirm Password'),
-          // ),
-          // const SizedBox(
-          //   height: 16.0,
-          // ),
+        
           TextField(
             controller: _midIDController,
             decoration: const InputDecoration(hintText: 'Mid ID'),

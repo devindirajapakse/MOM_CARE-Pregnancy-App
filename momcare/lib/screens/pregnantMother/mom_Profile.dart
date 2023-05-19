@@ -26,8 +26,8 @@ class _momProfileState extends State<momProfile> {
   getData() async {
     FirebaseFirestore.instance
         .collection('mother')
-        //.doc(FirebaseAuth.instance.currentUser!.uid)
-        .doc('S1GTClT92ATaA0eggLwOb4mDx9P2')
+        .doc(FirebaseAuth.instance.currentUser!.uid)
+        //.doc('S1GTClT92ATaA0eggLwOb4mDx9P2')
         .get()
         .then((value) {
       setState(() {
@@ -119,9 +119,9 @@ class _momProfileState extends State<momProfile> {
                                             onPressed: () {
                                               FirebaseFirestore.instance
                                                   .collection('mother')
-                                                  //.doc(FirebaseAuth.instance.currentUser!.uid)
-                                                  .doc(
-                                                      'S1GTClT92ATaA0eggLwOb4mDx9P2')
+                                                  .doc(FirebaseAuth.instance.currentUser!.uid)
+                                                  // .doc(
+                                                  //     'S1GTClT92ATaA0eggLwOb4mDx9P2')
                                                   .update({
                                                 'name': name.text
                                               }).then((value) {
@@ -163,9 +163,9 @@ class _momProfileState extends State<momProfile> {
                                             onPressed: () {
                                               FirebaseFirestore.instance
                                                   .collection('mother')
-                                                  //.doc(FirebaseAuth.instance.currentUser!.uid)
-                                                  .doc(
-                                                      'S1GTClT92ATaA0eggLwOb4mDx9P2')
+                                                  .doc(FirebaseAuth.instance.currentUser!.uid)
+                                                  // .doc(
+                                                  //     'S1GTClT92ATaA0eggLwOb4mDx9P2')
                                                   .update({
                                                 'name': email.text
                                               }).then((value) {
@@ -207,9 +207,9 @@ class _momProfileState extends State<momProfile> {
                                             onPressed: () {
                                               FirebaseFirestore.instance
                                                   .collection('mother')
-                                                  //.doc(FirebaseAuth.instance.currentUser!.uid)
-                                                  .doc(
-                                                      'S1GTClT92ATaA0eggLwOb4mDx9P2')
+                                                  .doc(FirebaseAuth.instance.currentUser!.uid)
+                                                  // .doc(
+                                                  //     'S1GTClT92ATaA0eggLwOb4mDx9P2')
                                                   .update({
                                                 'name': password.text
                                               }).then((value) {
@@ -251,9 +251,9 @@ class _momProfileState extends State<momProfile> {
                                             onPressed: () {
                                               FirebaseFirestore.instance
                                                   .collection('mother')
-                                                  //.doc(FirebaseAuth.instance.currentUser!.uid)
-                                                  .doc(
-                                                      'hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
+                                                  .doc(FirebaseAuth.instance.currentUser!.uid)
+                                                  // .doc(
+                                                  //     'hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
                                                   .update({
                                                 'name': address.text
                                               }).then((value) {

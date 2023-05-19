@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:momcare/screens/pregnantMother/mom_Home.dart';
+import 'package:momcare/widgets/appBar.dart';
 
 class momEmergency extends StatefulWidget {
   const momEmergency({super.key});
@@ -11,19 +13,13 @@ class _momEmergencyState extends State<momEmergency> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      appBar: AppBar(
-        backgroundColor: const Color(0xffDECBEC),
-        toolbarHeight: 60,
-        centerTitle: true,
-        title: Container(
-          height: 100,
-          width: 100,
-          decoration: const BoxDecoration(
-            image: DecorationImage(image: AssetImage('images/logo.png'),),
-          ),
-        ),
-      ),
+      appBar: CustomAppBar(
+  onPressed: () {
+    Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MomHome()));
+  },
+  leadingIcon: Icons.arrow_back,
+),
     );
   }
 }

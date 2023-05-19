@@ -58,11 +58,6 @@ class _MomSignUpFormState extends State<MomSignUpForm> {
               decoration: const InputDecoration(hintText: 'Password'),
             ),
             const SizedBox(height: 16),
-            // TextField(
-            //   controller: confirmpass,
-            //   decoration: const InputDecoration(hintText: 'Confirm Password'),
-            // ),
-            // const SizedBox(height: 16),
             TextField(
               controller: _addressController,
               decoration: const InputDecoration(hintText: 'Address'),
@@ -79,7 +74,6 @@ class _MomSignUpFormState extends State<MomSignUpForm> {
             ),
             const SizedBox(height: 16),
             MaterialButton(
-              // onPressed: () => onClickSignup(),
               onPressed: () async {
                 if (_formKey.currentState!.validate()) {
                   try {

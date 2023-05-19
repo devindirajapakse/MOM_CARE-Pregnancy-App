@@ -5,7 +5,6 @@ import 'package:momcare/colors.dart';
 import 'package:momcare/screens/send_OTP.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-
 class Forgotpassword extends StatefulWidget {
   const Forgotpassword({Key? key}) : super(key: key);
 
@@ -98,25 +97,26 @@ class _ForgotpasswordState extends State<Forgotpassword> {
               ),
               const SizedBox(height: 70),
               MaterialButton(
-                onPressed: ()async {
+                onPressed: () async {
                   //sendResetPasswordEmail(context, email);
                   try {
-    // Set the Firebase language code to "en" if it's not already set
-    if (FirebaseAuth.instance.languageCode == null) {
-      await FirebaseAuth.instance.setLanguageCode("en");
-    }
-    await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
-    Get.snackbar("Success",
-        "Password reset email sent to $email. Please check your inbox.",
-        snackPosition: SnackPosition.TOP,
-        backgroundColor: Colors.green.withOpacity(0.1),
-        colorText: Colors.green);
-  } catch (e) {
-    Get.snackbar("Error", "$e.message",
-        snackPosition: SnackPosition.TOP,
-        backgroundColor: Colors.redAccent.withOpacity(0.1),
-        colorText: Colors.red);
-  }
+                    // Set the Firebase language code to "en" if it's not already set
+                    if (FirebaseAuth.instance.languageCode == null) {
+                      await FirebaseAuth.instance.setLanguageCode("en");
+                    }
+                    await FirebaseAuth.instance
+                        .sendPasswordResetEmail(email: email);
+                    Get.snackbar("Success",
+                        "Password reset email sent to $email. Please check your inbox.",
+                        snackPosition: SnackPosition.TOP,
+                        backgroundColor: Colors.green.withOpacity(0.1),
+                        colorText: Colors.green);
+                  } catch (e) {
+                    Get.snackbar("Error", "$e.message",
+                        snackPosition: SnackPosition.TOP,
+                        backgroundColor: Colors.redAccent.withOpacity(0.1),
+                        colorText: Colors.red);
+                  }
                 },
                 child: Container(
                   width: 340,
@@ -134,47 +134,43 @@ class _ForgotpasswordState extends State<Forgotpassword> {
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
-                        
                       ),
-                      
                     ),
-                    
                   ),
-                  
                 ),
-                
               ),
             ],
           ),
-          const SizedBox(height: 50,),
+          const SizedBox(
+            height: 50,
+          ),
         ],
       ),
     );
   }
 
-
-void onClickNextOne() {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => sendOTP()));
+  void onClickNextOne() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => sendOTP()));
   }
-  Future<void> sendResetPasswordEmail(BuildContext context, String email) async {
-  try {
-    // Set the Firebase language code to "en" if it's not already set
-    if (FirebaseAuth.instance.languageCode == null) {
-      await FirebaseAuth.instance.setLanguageCode("en");
+
+  Future<void> sendResetPasswordEmail(
+      BuildContext context, String email) async {
+    try {
+      // Set the Firebase language code to "en" if it's not already set
+      if (FirebaseAuth.instance.languageCode == null) {
+        await FirebaseAuth.instance.setLanguageCode("en");
+      }
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+      Get.snackbar("Success",
+          "Password reset email sent to $email. Please check your inbox.",
+          snackPosition: SnackPosition.TOP,
+          backgroundColor: Colors.green.withOpacity(0.1),
+          colorText: Colors.green);
+    } catch (e) {
+      Get.snackbar("Error", "$e.message",
+          snackPosition: SnackPosition.TOP,
+          backgroundColor: Colors.redAccent.withOpacity(0.1),
+          colorText: Colors.red);
     }
-    await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
-    Get.snackbar("Success",
-        "Password reset email sent to $email. Please check your inbox.",
-        snackPosition: SnackPosition.TOP,
-        backgroundColor: Colors.green.withOpacity(0.1),
-        colorText: Colors.green);
-  } catch (e) {
-    Get.snackbar("Error", "$e.message",
-        snackPosition: SnackPosition.TOP,
-        backgroundColor: Colors.redAccent.withOpacity(0.1),
-        colorText: Colors.red);
   }
-}
-
 }

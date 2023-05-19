@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:momcare/colors.dart';
 import 'package:momcare/screens/pregnantMother/mom_AppointHistory1.dart';
 import 'package:momcare/screens/pregnantMother/mom_Calender.dart';
-import 'package:momcare/screens/pregnantMother/mom_ContactUs.dart';
 import 'package:momcare/screens/pregnantMother/mom_Emergency.dart';
 import 'package:momcare/screens/pregnantMother/mom_Notification.dart';
 import 'package:momcare/screens/pregnantMother/mom_Profile.dart';
