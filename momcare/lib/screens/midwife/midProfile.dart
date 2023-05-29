@@ -27,8 +27,8 @@ class _midProfileState extends State<midProfile> {
   getData() async {
     FirebaseFirestore.instance
         .collection('midwife')
-        //.doc(FirebaseAuth.instance.currentUser!.uid)
-        .doc('hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
+        .doc(FirebaseAuth.instance.currentUser!.uid)
+        //.doc('hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
         .get()
         .then((value) {
       setState(() {
@@ -120,9 +120,8 @@ class _midProfileState extends State<midProfile> {
                                             onPressed: () {
                                               FirebaseFirestore.instance
                                                   .collection('midwife')
-                                                  //.doc(FirebaseAuth.instance.currentUser!.uid)
-                                                  .doc(
-                                                      'hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
+                                                  .doc(FirebaseAuth.instance.currentUser!.uid)
+                                                  //.doc('hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
                                                   .update({
                                                 'name': name.text
                                               }).then((value) {
@@ -164,9 +163,8 @@ class _midProfileState extends State<midProfile> {
                                             onPressed: () {
                                               FirebaseFirestore.instance
                                                   .collection('midwife')
-                                                  //.doc(FirebaseAuth.instance.currentUser!.uid)
-                                                  .doc(
-                                                      'hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
+                                                  .doc(FirebaseAuth.instance.currentUser!.uid)
+                                                  //.doc('hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
                                                   .update({
                                                 'name': email.text
                                               }).then((value) {
@@ -208,9 +206,8 @@ class _midProfileState extends State<midProfile> {
                                             onPressed: () {
                                               FirebaseFirestore.instance
                                                   .collection('midwife')
-                                                  //.doc(FirebaseAuth.instance.currentUser!.uid)
-                                                  .doc(
-                                                      'hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
+                                                  .doc(FirebaseAuth.instance.currentUser!.uid)
+                                                  //.doc('hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
                                                   .update({
                                                 'name': password.text
                                               }).then((value) {
@@ -252,9 +249,8 @@ class _midProfileState extends State<midProfile> {
                                             onPressed: () {
                                               FirebaseFirestore.instance
                                                   .collection('midwife')
-                                                  //.doc(FirebaseAuth.instance.currentUser!.uid)
-                                                  .doc(
-                                                      'hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
+                                                  .doc(FirebaseAuth.instance.currentUser!.uid)
+                                                  //.doc('hPm2zNvTwacIN3VTHTNyD2C8Zsx1')
                                                   .update({
                                                 'name': mobile.text
                                               }).then((value) {

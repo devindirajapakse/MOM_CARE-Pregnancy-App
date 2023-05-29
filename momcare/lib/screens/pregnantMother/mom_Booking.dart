@@ -81,9 +81,7 @@ class _AppointmentsScreenState extends State<AppointmentsScreen> {
 
                     
 
-                    } catch (e) {
-
-                    }
+                    } catch (e){}
 
                     // Update the 'isAccepted' field in Firestore
                     

@@ -63,7 +63,7 @@ class _ForgotpasswordState extends State<Forgotpassword> {
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30.0),
                 child: Text(
-                  'Please enter your phone number to receive a verification code',
+                  'Please enter your email address to receive a verification code',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 18,

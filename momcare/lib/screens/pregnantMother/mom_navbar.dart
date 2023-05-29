@@ -49,12 +49,14 @@ class _NavBarState extends State<NavBar> {
           ),
           customDivider(),
           CustomListTileButton(
-            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>momEmergency()));},
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>MomEmergency()));},
             title: 'Emergency Call',
           ),
           customDivider(),
           CustomListTileButton(
-            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>momNotification()));},
+            onTap: (){
+              //Navigator.push(context, MaterialPageRoute(builder: (context)=>momNotification()));//
+            },
             title: 'Notification',
           ),
           customDivider(),

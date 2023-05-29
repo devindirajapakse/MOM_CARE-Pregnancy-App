@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:momcare/screens/pregnantMother/mom_Home.dart';
+import 'package:momcare/widgets/appBar.dart';
 
 class momProfile extends StatefulWidget {
   const momProfile({super.key});
@@ -43,18 +45,13 @@ class _momProfileState extends State<momProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      appBar: AppBar(
-        backgroundColor: Color(0xffDECBEC),
-        toolbarHeight: 60,
-        centerTitle: true,
-        title: Container(
-          height: 100,
-          width: 100,
-          decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage('images/logo.png'),),
-          ),
-        ),
-      ),
+      appBar: CustomAppBar(
+  onPressed: () {
+    Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MomHome()));
+  },
+  leadingIcon: Icons.arrow_back,
+),
       body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Form(
